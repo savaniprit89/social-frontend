@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  padding:0;
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -11,3 +13,44 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+#theme{
+  display:none;
+}
+#theme:checked ~ .App{
+  filter: invert(1);
+}
+
+
+.App{
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+}
+
+.main{
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+}
+img {
+  object-fit: cover;
+}
+
+
+@import url("./styles/auth.css");
+@import url("./styles/loading.css");
+/* -------- Header ---------- */
+@import url("./styles/header.css");
+@import url("./styles/profile.css");
+@import url("./styles/home.css");
+@import url("./styles/status.css");
+@import url("./styles/comment.css");
+@import url("./styles/post_thumb.css");
+@import url("./styles/message.css");
+.mode{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
